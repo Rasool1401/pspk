@@ -1,0 +1,137 @@
+ 
+            .b2{
+                display: inline-block;
+                width: 1245px;
+                padding-right: 0px;
+            }
+            .name{
+                position: absolute;
+                color: rgb(251, 199, 199);
+                top: 190px;
+                font-style: italic;
+                left: 50px;
+                font-size: 70px;
+                font-weight: bold;
+                display: inline-block;
+            }
+            .name1{
+                position: absolute;
+                top: 215px;
+                font-style: italic;
+                left: 100px;
+                font-size: 55px;
+                color: rgb(0, 0, 0);
+                
+            }
+            .links{
+                position: absolute;
+                list-style: none;
+                float:left;
+                top: 10px;
+                display: flex;
+            }
+            
+            .links li
+            {
+                font-weight: bolder;
+                font-size: 16px;
+                font-family: 'Courier New', Courier, monospace;
+                color: rgb(251, 199, 199);
+                padding: 30px;
+                display: inline-block;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+            .links:hover li{
+                filter: blur(2px);
+            }
+            .links li:hover{
+                filter: blur(0);
+                letter-spacing: 2px;
+                color: black;
+            }
+            .toggle{
+                position: absolute;
+                top: 30px;
+                cursor: pointer;
+                left: 20px;
+                display: none;
+            }
+            .toggle_btn{
+                font-weight: bolder;
+                font-size: 16px;
+                font-family: 'Courier New', Courier, monospace;
+                color: rgb(251, 199, 199);
+                padding: 30px;
+                display:none;
+                left: 40px;
+                height: 240px;
+                cursor: pointer;
+                border-bottom-right-radius: 30px;
+                transition: 0.5s;
+                color: rgb(244, 244, 244);
+                position: absolute;
+                top: 50px;
+                backdrop-filter: blur(15px);
+                background-color: rgb(255,255,255,0.1);
+            }
+           
+            .toggle_btn li
+            {
+                font-weight: bolder;
+                font-size: 16px;
+                font-family: 'Courier New', Courier, monospace;
+                color: rgb(251, 199, 199);
+                padding: 30px;
+                cursor: pointer;
+                transition: 0.5s;
+            }
+            .toggle_btn:hover li{
+                filter: blur(2px);
+            }
+            .toggle_btn li:hover{
+                filter: blur(0);
+                letter-spacing: 2px;
+                color: black;
+            }
+           
+
+ @media screen and (max-width:900px){
+    .b2{
+        position: relative;
+        display: inline;
+        right: 750px;
+        bottom: 5px;
+    }
+    .name{
+        top: 400px;
+        font-size: 40px;
+        left: 30px;
+        border: 2px 2px 9px rgb(255, 255, 255);
+    }
+    .name1{
+        top: 410px;
+        left: 55px;
+        font-size:33px ;
+    }
+    .links li {
+       display: none;
+       padding:9px; 
+    }
+    .toggle{
+        display: block;
+        
+    }
+    .toggle_btn{
+        display: block;
+        left: -300px;
+    }
+    .toggle_btn li{
+        list-style: none;
+        overflow: hidden;
+    }
+   nav ul.show{
+    left: 0px;
+   }
+    
+}
